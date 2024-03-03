@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*, 
+*::after,
+**::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    font-family: "Roboto", sans-serif;
+}
+
+.card{
+    width: 400px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 1em;
+
+    .card-title{
+        text-align: center;
+        font-size: 1.2rem;
+        border-bottom: 1px solid gray;
+        padding: 0.2em 0;
+    }
+
+    .card-body{
+        max-height: 200px;
+        overflow-y: scroll;
+        scrollbar-color: gray transparent;
+        scrollbar-width: thin;
+    }
+
+    .task{
+        padding-bottom: 0.9em;
+        margin-right: 0.4em;
+    }
+
+    #delete{
+        background-color: gray;
+        padding: 4px;
+        border-radius: 20%;
+        color:white;
+        cursor: pointer;
+    }
+
+    & li{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .card-inputs{
+        padding-top: 1em;
+        border-top: 1px solid gray;
+        text-align: center;
+
+        & #item-input{
+            width: 70%;
+        }
+
+        & #submit{
+            width: 20%;
+            background-color: transparent;
+        }
+
+        & #submit, #item-input{
+            padding: 0.5em;
+            outline: none;
+            border: 2px solid rgba(0, 0, 0, 0.468);
+            border-radius: 4px;
+        }
+    }
+}

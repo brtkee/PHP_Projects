@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">    
+</head>
+<body>
+    
+    <form method="post" id="contact-form">
+
+        <div class="form-title">
+            Send us a Message
+        </div>
+
+        <div class="form-content">
+
+            <section class="row">
+                <span class="wrap">
+                    <input type="email" id="email-to" placeholder="Enter Email you want to send message" required>
+                    <ion-icon name="person-outline"></ion-icon>
+                </span>
+
+                <span class="wrap">
+                    <input type="email" id="enter-email" placeholder="Enter your Email" required>
+                    <ion-icon name="mail-outline"></ion-icon>
+                </span>
+            </section>
+
+            <section class="row">
+                <span class="wrap">
+                    <input type="tel" id="phone-number" placeholder="Enter your Phone" required>
+                    <ion-icon name="call-outline"></ion-icon>
+                </span>
+
+                <span class="wrap">
+                    <input type="text" id="website" placeholder="Enter your Website" >
+                    <ion-icon name="globe-outline"></ion-icon>
+                </span>
+            </section>
+            
+            <div class="wrap">
+                <textarea id="write-message" placeholder="Write your message" required>
+
+                </textarea>
+                <ion-icon name="chatbox-ellipses-outline"></ion-icon>
+            </div>
+        </div>
+
+        <button id="send-message">Send Message</button>
+        <span id="result-message"></span>
+    </form>    
+
+    <script src="script.js"></script>
+
+    <!-- Ion Icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    background-color: #076DEB;
+}
+
+ion-icon{--ionicon-stroke-width: 45px;}
+
+#contact-form{
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding-bottom: 0.2em;
+    
+    & .form-title{
+        padding: 1em;
+        font-size: 1.5rem;
+        position: relative;
+    }
+
+    & .form-title::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: rgba(128, 128, 128, 0.619);
+    }
+
+    & .form-content{
+        padding: 2em;
+        display: flex;
+        flex-direction: column;
+
+        & .wrap{
+            position: relative;
+
+            & input{
+                padding: 0.5em;
+                padding-left: 1.8em;
+                margin-bottom: 0.8em;
+                outline: none;
+            }
+
+            & input:not(:focus), ion-icon{
+                opacity: 0.5;
+            }
+
+            & input:focus{
+                border: 2px solid #076DEB;
+            }
+
+            & ion-icon{
+                position: absolute;
+                left: 0;
+                transform: translateY(55%);
+                border-right: 1px solid black;
+                padding-right: 0.2em;
+                padding-left: 0.2em;
+            }
+
+        }
+    }
+
+    & #write-message{
+        width: 100%;
+        padding-left: 1.8em;
+        padding-top: 0.3em;
+        outline: none;
+        resize: vertical;
+        max-height: 200px;
+    }
+
+    & #write-message:focus{
+
+        border: 2px solid #076DEB;
+    }
+
+    & #send-message{
+        padding: 0.5em;
+        background-color: #076DEB;
+        border: none;
+        margin-left: 1.5em;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+    }
+
+    & #result-message{
+        margin-left: 1em;
+        font-size: 0.9rem;
+        opacity: 0.5;
+    }
+}
+

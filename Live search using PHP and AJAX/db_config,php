@@ -1,0 +1,15 @@
+<?php
+
+try
+{
+
+    $db_connection = new mysqli("localhost", "root", "", "autocomplete");
+
+}
+catch(Exception $err)
+{
+
+    echo "An Error Accurred: {$err->getMessage()}";
+    die();
+
+}
